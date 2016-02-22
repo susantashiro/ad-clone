@@ -43,10 +43,10 @@
 // 1. Global
 // ---------
 
-$global-width: rem-calc(1200);
+$global-width: 100%;        //changed this
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: #42CCA6;    //changed this
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -87,7 +87,7 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: 30px;
+$grid-column-gutter: 0px;
 $block-grid-max: 6;
 
 // 4. Base Typography
@@ -230,12 +230,13 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: #fff;
 $button-color-alt: #000;
+$button-font-weight: bold;               // Is this not working??
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
   default: 0.9rem,
-  large: 1.25rem,
+  large: 1.20rem,
 );
 $button-opacity-disabled: 0.25;
 
@@ -527,4 +528,3 @@ $topbar-padding: 0.5rem;
 $topbar-background: #eee;
 $topbar-link-color: #fff;
 $topbar-input-width: 200px;
-
