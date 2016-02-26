@@ -1,0 +1,148 @@
+body, h3, h4, h5 {
+	font-family: 'Dosis', sans-serif;
+
+}
+ul {
+    list-style-type: none;
+	padding:0; margin:0;
+}
+
+.tm-green {
+	color: #42CCA6;
+}
+.tm-dk-gray {
+	color: #516A80;
+}
+.top-bar img {
+	max-height: 3.2em;
+}
+
+.tm-townhall-panel {
+	height: 19em;
+	vertical-align: middle;
+	background-position: center center;
+}
+
+.tm-townhall-panel h1 {
+	font-family: 'Permanent Marker', cursive;
+	color: #FFFFFF;
+}
+.tm-valign {
+	position: relative;
+	top: 40%;
+}
+
+.tm-text-block {
+	padding: 1.6em 0em;
+}
+
+
+.tm-mission h3 {
+	margin-bottom: 0.7em;
+	line-height: 1.3em;
+}
+.tm-mission p {
+	line-height: 1.4em;
+	margin-bottom: 2em;
+}
+
+.tm-mission a {
+	font-weight: bold;
+	padding: 0.8em 4em;
+}
+.tm-mission-images {
+	background-color: #F5F1EE;
+}
+
+.tm-mission-images > .row {
+	height: 21em;
+	padding: 1.5em 0em;
+}
+.tm-location h3 {
+	margin: 0.5em 0em 1.3em 0em;
+}
+.tm-location h5 {
+	margin: 0.8em 0em 1.2em 0em;
+}
+.tm-location p {
+	line-height: 0.3em;
+}
+.tm-location p:last-child {
+	margin-bottom: 2.1em;
+}
+
+
+
+.tm-location-images div {
+	height: 24em;
+}
+
+
+.tm-location-images h3 {
+	color: #FFFFFF;
+}
+.tm-location-images h3:first-child {
+	padding-top: 1.5em;
+}
+.tm-location-images h3:last-child {
+	position: relative;
+	top: 20%;
+}
+.tm-location-images button {
+	margin: 0em 4.3em;
+}
+.orbit-previous:hover,
+.orbit-next:hover,
+.orbit-previous:active,
+.orbit-next:active,
+.orbit-previous:focus,
+.orbit-next:focus {
+    background-color: transparent;
+}
+
+
+.tm-perks h3 {
+	margin: 0.5em 0em 1.4em 0em;
+}
+
+.tm-perks div.row.text-left {
+	margin-bottom: 2.5em;
+	height: 2em;
+}
+
+
+.tm-team-images div {
+	height: 12em;
+}
+
+.tm-job-postings {
+	background-color: #F5F1EE;
+}
+.tm-job-postings h3 {
+	margin: 0.7em 0em 1.3em 0em;
+}
+
+
+.tm-job-postings h5 {
+	margin-bottom: 0;
+	line-height: 1em;
+}
+.tm-job-postings div.large-10 {
+	padding: 1.1em 2em;
+	background-color: #FFFFFF;
+}
+.tm-job-post {
+	margin: 1.3em 0em;
+}
+.tm-job-post p {
+	font-size: 0.85em;
+	margin-bottom: 0.9em;
+}
+.tm-job-post a {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0.6em 3em;
+}
+.tm-job-description {
+	color: #999999;
+}
