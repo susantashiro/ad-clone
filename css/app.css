@@ -2839,15 +2839,15 @@ body {
 
 .orbit-bullets {
   position: relative;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
   text-align: center; }
   [data-whatinput="mouse"] .orbit-bullets {
     outline: 0; }
   .orbit-bullets button {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin: 0.1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0.3rem;
     background-color: #cacaca;
     border-radius: 50%; }
     .orbit-bullets button:hover {

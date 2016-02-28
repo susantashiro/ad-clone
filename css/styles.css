@@ -13,6 +13,9 @@ ul {
 .tm-dk-gray {
 	color: #516A80;
 }
+.tm-text-block {
+	padding: 1.6em 1em;
+}
 .top-bar img {
 	max-height: 3.2em;
 }
@@ -32,9 +35,7 @@ ul {
 	top: 40%;
 }
 
-.tm-text-block {
-	padding: 1.6em 0em;
-}
+
 
 
 .tm-mission h3 {
@@ -70,11 +71,14 @@ ul {
 .tm-location p:last-child {
 	margin-bottom: 2.1em;
 }
-
-
-
-.tm-location-images div {
+/*.tm-location-images div {
 	height: 24em;
+}*/
+
+/*to decrease size of images*/
+.tm-location-images div,
+.tm-location-images ul {
+	height: 24em !important;
 }
 
 
@@ -115,6 +119,7 @@ ul {
 	height: 12em;
 }
 
+
 .tm-job-postings {
 	background-color: #F5F1EE;
 }
@@ -145,4 +150,83 @@ ul {
 }
 .tm-job-description {
 	color: #999999;
+}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.tm-perks div.row.text-left {
+		height: 3em;
+	}
+	.tm-perks.tm-text-block {
+		padding-bottom: 3em;
+	}
+/*
+	to decrease size of location images
+	.tm-location-images div,
+	.tm-location-images ul {
+		height: 16em	!important;
+	}*/
+
+}
+@media only screen and (min-width: 40.063em) and (max-width: 50em) {
+	.tm-team-images div {
+		height: 10em;
+	}
+}
+@media screen and (max-width: 40em) {
+	.button {
+		font-weight: bold;
+		background: #E5774E;
+	}
+	.tm-mission h3 {
+		color: #E5774E;
+	}
+	.tm-mission a {
+		padding: 1em 4em;
+	}
+	div.tm-mission-slide {
+		height: 22.5em;
+		background-color: #F5F1EE;
+	}
+	.tm-mission-slide div {
+		height: 18em;
+		padding: 1.2em 0em 3em 0em;
+	}
+	.tm-location h5 {
+		font-weight: bold;
+	}
+
+	.tm-location-images div,
+	.tm-location-images ul {
+		height: 16em	!important;
+	}
+	.tm-location-images button {
+    	margin: 0em 0.3em;
+	}
+	.tm-location-images nav {
+		margin-top: -2em;
+	}
+	.tm-location-images h3:last-child {
+		top: 50%;
+	}
+
+	.tm-perks-slide div {
+		margin: auto;
+	}
+	.tm-perks-slide h3 {
+		margin: 2em auto;
+	}
+	.tm-perks-slide li {
+		margin-bottom: 2em;
+	}
+	.tm-perks-slide li:last-child {
+		margin-bottom: 0em;
+	}
+	.tm-job-postings h5 {
+		color: #E5774E;
+	}
+	.tm-job-postings a {
+		width: 100%;
+		margin: 0;
+	}
 }
