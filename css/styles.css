@@ -23,7 +23,6 @@ ul {
 .tm-townhall-panel {
 	height: 19em;
 	vertical-align: middle;
-	background-position: center center;
 }
 
 .tm-townhall-panel h1 {
@@ -174,7 +173,9 @@ ul {
 	}
 }
 @media screen and (max-width: 40em) {
-	.button {
+	.button,
+	.button:hover,
+	.button:focus  {
 		font-weight: bold;
 		background: #E5774E;
 	}
@@ -191,6 +192,9 @@ ul {
 	.tm-mission-slide div {
 		height: 18em;
 		padding: 1.2em 0em 3em 0em;
+	}
+	.tm-mission-slide ul {
+		height: 18em	!important;
 	}
 	.tm-location h5 {
 		font-weight: bold;
@@ -212,6 +216,9 @@ ul {
 
 	.tm-perks-slide div {
 		margin: auto;
+	}
+	.tm-perks-slide ul.orbit-container {
+		height: 205px	!important;
 	}
 	.tm-perks-slide h3 {
 		margin: 2em auto;
