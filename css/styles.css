@@ -1,11 +1,5 @@
-body, h3, h4, h5 {
-	font-family: 'Dosis', sans-serif;
 
-}
-ul {
-    list-style-type: none;
-	padding:0; margin:0;
-}
+
 
 .tm-green {
 	color: #42CCA6;
@@ -13,51 +7,8 @@ ul {
 .tm-dk-gray {
 	color: #516A80;
 }
-.tm-text-block {
-	padding: 1.6em 1em;
-}
-.top-bar img {
-	max-height: 3.2em;
-}
-
-.tm-townhall-panel {
-	height: 19em;
-	vertical-align: middle;
-}
-
-.tm-townhall-panel h1 {
-	font-family: 'Permanent Marker', cursive;
-	color: #FFFFFF;
-}
-.tm-valign {
-	position: relative;
-	top: 40%;
-}
 
 
-
-
-.tm-mission h3 {
-	margin-bottom: 0.7em;
-	line-height: 1.3em;
-}
-.tm-mission p {
-	line-height: 1.4em;
-	margin-bottom: 2em;
-}
-
-.tm-mission a {
-	font-weight: bold;
-	padding: 0.8em 4em;
-}
-.tm-mission-images {
-	background-color: #F5F1EE;
-}
-
-.tm-mission-images > .row {
-	height: 21em;
-	padding: 1.5em 0em;
-}
 .tm-location h3 {
 	margin: 0.5em 0em 1.3em 0em;
 }
@@ -177,25 +128,10 @@ ul {
 	.button:hover,
 	.button:focus  {
 		font-weight: bold;
-		background: #E5774E;
+		background: #42CCA6;
 	}
-	.tm-mission h3 {
-		color: #E5774E;
-	}
-	.tm-mission a {
-		padding: 1em 4em;
-	}
-	div.tm-mission-slide {
-		height: 22.5em;
-		background-color: #F5F1EE;
-	}
-	.tm-mission-slide div {
-		height: 18em;
-		padding: 1.2em 0em 3em 0em;
-	}
-	.tm-mission-slide ul {
-		height: 18em	!important;
-	}
+
+
 	.tm-location h5 {
 		font-weight: bold;
 	}
@@ -229,9 +165,9 @@ ul {
 	.tm-perks-slide li:last-child {
 		margin-bottom: 0em;
 	}
-	.tm-job-postings h5 {
+	/*.tm-job-postings h5 {
 		color: #E5774E;
-	}
+	}*/
 	.tm-job-postings a {
 		width: 100%;
 		margin: 0;

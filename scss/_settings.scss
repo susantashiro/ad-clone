@@ -46,7 +46,7 @@
 $global-width: 100%;        //changed this
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #42CCA6;    //changed this
+// $primary-color: #42CCA6;    //changed this
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -58,7 +58,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: "Dosis",Arial,Helvetica,sans-serif;    //changed this
 $body-antialiased: true;
 $text-direction: ltr;
 $global-margin: 1rem;
@@ -69,6 +69,8 @@ $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
 $rem-base: 16px;
+
+
 
 // 2. Breakpoints
 // --------------

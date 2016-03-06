@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import 'palette/_colorpallete';
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -42,3 +45,95 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// Global styles
+ul {
+    list-style-type: none;
+	padding:0; margin:0;
+}
+section, div, li {
+    background-size: cover;
+    background-position: center center;
+}
+
+.button {
+    background-color: $primary-color;
+}
+h5 {
+    color: $primary-color;
+}
+
+.tm-text-block {
+	padding: 1.6em 1em;
+}
+//Fixed Header
+.top-bar img {
+	max-height: 3.2em;
+}
+
+// Townhall panel w/ background image
+section.tm-townhall-panel {
+    background-position: center 0%;
+    position: relative;
+    height: 19em;
+    h1 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        font-family: 'Permanent Marker',Arial,Helvetica,cursive;
+    	color: $header-overlay;
+    }
+}
+
+//Mission statement section
+section.tm-mission {
+    h3 {
+        color: $primary-color;
+        margin-bottom: 0.7em;
+    	line-height: 1.3em;
+    }
+    p {
+        line-height: 1.4em;
+        margin-bottom: 2em;
+    }
+    .button {
+        padding: 1em 4em;
+    }
+    @include breakpoint(medium) {
+        .button {
+            font-weight: bold;
+        	padding: 0.8em 4em;
+        }
+    }
+}
+
+//Images below mission section
+section.tm-mission-images {
+    background-color: $section-background;
+}
+//Orbit slider shown for small devices only
+div.tm-mission-slider {
+    height: 22.5em;
+    div {
+        height: 18em;
+		padding: 1.2em 0em 3em 0em;
+    }
+    ul {
+        height: 18em	!important;
+        // &: lastchild
+    }
+    // &:last-child li{
+    //         div {
+    //             background-position: 0% 80%;
+    //         {
+    //     }
+    // }
+}
+//No orbit slider - hide for small devices
+div.tm-mission-noslider {
+    .row {
+        height: 21em;
+    	padding: 1.5em 0em;
+    }
+}
