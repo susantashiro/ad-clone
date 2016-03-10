@@ -4171,15 +4171,30 @@ div.tm-mission-slider {
     padding: 1.2em 0em 3em 0em; }
   div.tm-mission-slider ul {
     height: 18em	!important; }
-    div.tm-mission-slider ul li:last-child div {
-      background-position: 0% 90%; }
-
-div.tm-mission-noslider .row {
-  height: 21em;
-  padding: 1.5em 0em; }
-
-div.tm-mission-noslider div:last-of-type {
-  background-position: 0% 90%; }
+  div.tm-mission-slider li:first-of-type div:nth-child(3) {
+    background-position: 0% 90%; }
+  div.tm-mission-slider li:nth-of-type(2) div:first-child {
+    background-position: 60% center; }
+  div.tm-mission-slider li:nth-of-type(2) div:nth-child(2) {
+    background-position: 80% center; }
+  div.tm-mission-slider li:nth-of-type(3) div:first-child,
+  div.tm-mission-slider li:nth-of-type(3) div:last-child {
+    background-position: center 20%; }
+  div.tm-mission-slider li:nth-of-type(3) div:nth-child(2) {
+    background-position: center 80%; }
+  div.tm-mission-slider li:nth-of-type(4) div:first-child,
+  div.tm-mission-slider li:nth-of-type(4) div:nth-child(2) {
+    background-position: center 20%; }
+  div.tm-mission-slider li:last-of-type div:first-child {
+    background-position: center 20%; }
+  div.tm-mission-slider li:last-of-type div:nth-child(2),
+  div.tm-mission-slider li:last-of-type div:last-child {
+    background-position: center 70%; }
+  @media screen and (min-width: 40em) {
+    div.tm-mission-slider {
+      height: 25.5em; }
+      div.tm-mission-slider div, div.tm-mission-slider ul {
+        height: 21em  !important; } }
 
 section.tm-location h3 {
   margin: 0.5em 0em 1.3em 0em; }
