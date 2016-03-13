@@ -60,7 +60,7 @@ section, div, li {
     font-weight: bold;
     background-color: $primary-color;
 }
-h5 {
+h2, h5 {
     color: $primary-color;
 }
 h3 {
@@ -117,27 +117,12 @@ section.tm-mission {
 section.tm-mission-images {
     background-color: $section-background;
 }
-//Orbit slider shown for small devices only
-// div.tm-mission-slider {
-//     height: 22.5em;
-//     div {
-//         height: 18em;
-// 		padding: 1.2em 0em 3em 0em;
-//     }
-//     ul {
-//         height: 18em	!important;
-//         li:nth-child(3) div {
-//             background-position: 0% 90%;
-//         }
-//     }
-// }
-
 //Orbit slider for mission images
 div.tm-mission-slider {
-    height: 22.5em;
+    height: 21.5em;
     div {
         height: 18em;
-		padding: 1.2em 0em 3em 0em;
+		padding: 0.6em 0em 2em 0em;
     }
     ul {
         height: 18em	!important;
@@ -186,7 +171,7 @@ div.tm-mission-slider {
         }
     }
     @include breakpoint(medium) {
-        height: 25.5em;
+        height: 24.5em;
         div, ul {
             height: 21em  !important;
         }
@@ -319,39 +304,119 @@ section.tm-team-images {
 }
 
 //Job postings section
+// section.tm-job-postings {
+//     background-color: $section-background;
+//     h3 {
+//         margin: 0.7em 0em 1.3em 0em;
+//     }
+//     h5 {
+//         margin-bottom: 0;
+//     	line-height: 1em;
+//     }
+//     div.large-10 {
+//     	padding: 1.1em 2em;
+//     	background-color: $job-post-background;
+//     }
+//     div.tm-job-post {
+//     	margin: 1.3em 0em;
+//     }
+//     p {
+//         font-size: 0.85em;
+//     	margin-bottom: 0.9em;
+//     }
+//     p.tm-job-description {
+//         color: $job-paragraph;
+//     }
+//     .button {
+//         width: 100%;
+//         margin: 0;
+//         font-size: 1em;
+//         font-weight: bold;
+//         padding: 0.6em 3em;
+//     }
+//     @include breakpoint(medium) {
+//         .button {
+//             width: auto;
+//         }
+//     }
+// }
 section.tm-job-postings {
     background-color: $section-background;
+    #tm-job-container {
+        background-color: #FFFFFF;
+        padding: 1.1em 2em;
+    }
+    div {
+        width: 100%;
+    }
+    div.tm-job-link {
+        height: 1.8em;
+    }
+    div.tm-dept {
+        margin-top: 1.5em;
+    }
+    h4 {
+        color: $subheader-color;
+    }
     h3 {
-        margin: 0.7em 0em 1.3em 0em;
-    }
-    h5 {
-        margin-bottom: 0;
-    	line-height: 1em;
-    }
-    div.large-10 {
-    	padding: 1.1em 2em;
-    	background-color: $job-post-background;
-    }
-    div.tm-job-post {
-    	margin: 1.3em 0em;
+        margin-bottom: 1.5em;
     }
     p {
-        font-size: 0.85em;
-    	margin-bottom: 0.9em;
+        color: $subheader-color;
     }
-    p.tm-job-description {
-        color: $job-paragraph;
+    a:hover {
+        border-bottom: 1px solid;
     }
-    .button {
-        width: 100%;
-        margin: 0;
-        font-size: 1em;
-        font-weight: bold;
-        padding: 0.6em 3em;
-    }
-    @include breakpoint(medium) {
-        .button {
-            width: auto;
+    @include breakpoint(small only) {
+        #tm-job-container {
+            padding: 1em;
+        }
+        div.tm-job-link {
+            height: auto;
+        }
+        p {
+             float: left;
+             margin-bottom: 0em;
+        }
+        h4 {
+            font-weight: bold;
+        }
+
+        h5 {
+            margin-bottom: 0em;
         }
     }
+}
+
+
+//JOB DETAIL PAGE ----------------------------
+
+section.tm-job-post{
+    padding: 5em;
+    div {
+        width: 100%;
+    }
+    li {
+        list-style-type: disc;
+        margin-left: 1.5em;
+    }
+    a:first-of-type {
+        margin-top: 2em;
+        &:hover {
+            border-bottom: 1px solid;
+        }
+    }
+    @include breakpoint(medium down) {
+        a:first-of-type {
+            float: left;
+        }
+    }
+    h2 {
+        color: #000000;
+        margin-bottom: 0em;
+    }
+    @include breakpoint(small only) {
+        padding: 3em;
+    }
+
 }

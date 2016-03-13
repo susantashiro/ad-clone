@@ -31,7 +31,7 @@
                 <h3>We're on a mission to make the world’s highest quality natural and organic products available for every American family.</h3>
                 <p>Thrive members get access to their favorite healthy snacks, supplements, home, beauty, and baby products at 30-50% off retail value—all shipped to their front door. As part of our Thrive Gives initiative, each paid membership on the site also sponsors a free membership for a low-income family.</p>
                 <a class="button show-for-small-only" href="#"> JOIN THRIVE MARKET </a>
-                <a class="large button hide-for-small-only" href="#"> JOIN OUR MARKET </a>
+                <a class="large button hide-for-small-only" href="https://thrivemarket.com/" target="_blank"> JOIN OUR MARKET </a>
             </div>
         </div>
     </section>
@@ -111,19 +111,25 @@
             <div class="large-7 large-centered columns">
                 <div class="row">
                     <div class="large-4 medium-4 small-12 columns">
-                        <img src="	https://img.thrivemarket.com/custom_assets/e5cebabd4c20cf0b8f9b9cd703977baa.png" alt="">
+                        <a href="https://www.google.com/maps/place/4509+Glencoe+Ave,+Marina+Del+Rey,+CA+90292/@33.9854195,-118.4390957,17z/data=!3m1!4b1!4m2!3m1!1s0x80c2ba7db374298f:0x4e34d04ae5cbe844" target="_blank">
+                            <img src="	https://img.thrivemarket.com/custom_assets/e5cebabd4c20cf0b8f9b9cd703977baa.png" alt="">
+                        </a>
                         <h5>HQ in Marina del Rey</h5>
                         <p>4509 Glencoe Avenue </p>
                         <p>Marina del Rey, CA 90292</p>
                     </div>
                     <div class="large-4 medium-4 small-12 columns">
-                        <img src="	https://img.thrivemarket.com/custom_assets/12dd34210394ab863a74d8b406730d45.png" alt="">
+                        <a href="https://www.google.com/maps/place/2920+Tanager+Ave,+Commerce,+CA+90040/@33.9884383,-118.1319394,17z/data=!3m1!4b1!4m2!3m1!1s0x80c2ce13fe1f9639:0xcb24aa4668f8c94" target="_blank">
+                            <img src="	https://img.thrivemarket.com/custom_assets/12dd34210394ab863a74d8b406730d45.png" alt="">
+                        </a>
                         <h5>Distribution Center</h5>
                         <p>2920 Tanager Avenue</p>
                         <p>Commerce, CA 90040</p>
                     </div>
                     <div class="large-4 medium-4 small-12 columns">
-                        <img src="	https://img.thrivemarket.com/custom_assets/12dd34210394ab863a74d8b406730d45.png" alt="">
+                        <a href="https://www.google.com/maps/place/1736+Lammers+Pike,+Batesville,+IN+47006/@39.2957162,-85.1888104,17z/data=!3m1!4b1!4m2!3m1!1s0x886a8957090f0a3b:0xf6444eafe8a24937" target="_blank">
+                            <img src="	https://img.thrivemarket.com/custom_assets/12dd34210394ab863a74d8b406730d45.png" alt="">
+                        </a>
                         <h5>Distribution Center</h5>
                         <p>1736 Lammers Pike</p>
                         <p>Batesville, IN 47006</p>
@@ -347,22 +353,7 @@
 
     <section class="tm-text-block tm-job-postings">
         <h3 class="text-center">Our openings, come join us!</h3>
-        <div id="tm-job-container"></div>
-<!--
-        <div class="row tm-job-post">
-            <div class="large-10 columns large-centered" style="background-color: #FFFFFF">
-                <div class="row">
-                    <div class="large-6 columns">
-                        <h5 class="tm-green">Android Engineer</h5>
-                        <p>Engineer, San Francisco, Internship</p>
-                    </div>
-                    <div class="large-6 columns text-right">
-                        <a class="button right" href="#"> APPLY </a>
-                    </div>
-                </div>
-                <p class="tm-job-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div> -->
+        <div class="large-8 row column"id="tm-job-container"></div>
     </section>
 
 
@@ -373,39 +364,7 @@
     <script src="bower_components/foundation-sites/js/foundation.orbit.js"></script>
     <script src="js/app.js"></script>
     <script>
-        $.ajax({
-            method: 'GET',
-            url: 'https://api.lever.co/v0/postings/thrivemarket?mode=json',
-            success: function (data) {
-                data.forEach(function (item) {
-                    var subtitle, htmlBlock, role
-                    subtitle = item.categories.team + ', ' + item.categories.location + ', ' + item.categories.commitment;
-                    role = item.descriptionPlain.split(/THE ROLE\s/)
 
-                    //New job descriptions do not inclue "THE ROLE"
-                    if (role.length === 1) {
-                        role.unshift('placeholder');
-                    }
-                    htmlBlock = [
-                        '<div class="row tm-job-post">',
-                            '<div class="large-10 columns large-centered" style="background-color: #FFFFFF">',
-                                '<div class="row">',
-                                    '<div class="large-6 medium-6 small-12 columns">',
-                                        '<h5>' + item.text + '</h5>',
-                                        '<p>' + subtitle + '</p>',
-                                    '</div>',
-                                '<div class="large-6 medium-6 hide-for-small-only columns text-right">',
-                                    '<a class="button right" href="#">APPLY</a>',
-                                '</div>',
-                            '</div>',
-                            '<p class="tm-job-description">' + role[1].trim() + '</p>',
-                        '</div>',
-                        '<a class="button right show-for-small-only" href="#">APPLY</a>'
-                    ].join('')
-                    $(htmlBlock).appendTo('#tm-job-container');
-                });
-            }
-        });
     </script>
 </body>
 </html>
