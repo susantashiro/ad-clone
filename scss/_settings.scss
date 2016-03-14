@@ -43,10 +43,10 @@
 // 1. Global
 // ---------
 
-$global-width: 100%;        //changed this
+$global-width: 100%;           //changed from original setting
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-// $primary-color: #42CCA6;    //changed this
+// $primary-color: #42CCA6;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -58,7 +58,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: "Dosis",Arial,Helvetica,sans-serif;    //changed this
+$body-font-family: "Dosis",Arial,Helvetica,sans-serif;    //changed from original setting
 $body-antialiased: true;
 $text-direction: ltr;
 $global-margin: 1rem;
@@ -232,7 +232,7 @@ $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: #fff;
 $button-color-alt: #000;
-$button-font-weight: bold;               // Is this not working??
+$button-font-weight: bold;
 $button-radius: $global-radius;
 $button-sizes: (
   tiny: 0.6rem,
