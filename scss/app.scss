@@ -55,7 +55,6 @@ section, div, li {
     background-size: cover;
     background-position: center center;
 }
-
 .button {
     font-weight: bold;
     background-color: $primary-color;
@@ -66,13 +65,8 @@ h2, h5 {
 h3 {
     color: $subheader-color;
 }
-
 .tm-text-block {
 	padding: 1.6em 1em;
-}
-//Fixed Header
-.top-bar img {
-	max-height: 3.2em;
 }
 
 // Townhall panel w/ background image
@@ -304,42 +298,6 @@ section.tm-team-images {
 }
 
 //Job postings section
-// section.tm-job-postings {
-//     background-color: $section-background;
-//     h3 {
-//         margin: 0.7em 0em 1.3em 0em;
-//     }
-//     h5 {
-//         margin-bottom: 0;
-//     	line-height: 1em;
-//     }
-//     div.large-10 {
-//     	padding: 1.1em 2em;
-//     	background-color: $job-post-background;
-//     }
-//     div.tm-job-post {
-//     	margin: 1.3em 0em;
-//     }
-//     p {
-//         font-size: 0.85em;
-//     	margin-bottom: 0.9em;
-//     }
-//     p.tm-job-description {
-//         color: $job-paragraph;
-//     }
-//     .button {
-//         width: 100%;
-//         margin: 0;
-//         font-size: 1em;
-//         font-weight: bold;
-//         padding: 0.6em 3em;
-//     }
-//     @include breakpoint(medium) {
-//         .button {
-//             width: auto;
-//         }
-//     }
-// }
 section.tm-job-postings {
     background-color: $section-background;
     #tm-job-container {
@@ -389,10 +347,13 @@ section.tm-job-postings {
 }
 
 
-//JOB DETAIL PAGE ----------------------------
-
+//Job detail page
 section.tm-job-post{
     padding: 5em;
+    h2 {
+        color: #000000;
+        margin-bottom: 0em;
+    }
     div {
         width: 100%;
     }
@@ -411,12 +372,7 @@ section.tm-job-post{
             float: left;
         }
     }
-    h2 {
-        color: #000000;
-        margin-bottom: 0em;
-    }
     @include breakpoint(small only) {
         padding: 3em;
     }
-
 }

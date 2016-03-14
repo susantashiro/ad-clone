@@ -4126,9 +4126,6 @@ h3 {
 .tm-text-block {
   padding: 1.6em 1em; }
 
-.top-bar img {
-  max-height: 3.2em; }
-
 section.tm-townhall-panel {
   background-position: center 0%;
   position: relative;
@@ -4320,6 +4317,9 @@ section.tm-job-postings {
 
 section.tm-job-post {
   padding: 5em; }
+  section.tm-job-post h2 {
+    color: #000000;
+    margin-bottom: 0em; }
   section.tm-job-post div {
     width: 100%; }
   section.tm-job-post li {
@@ -4332,9 +4332,6 @@ section.tm-job-post {
   @media screen and (max-width: 63.9375em) {
     section.tm-job-post a:first-of-type {
       float: left; } }
-  section.tm-job-post h2 {
-    color: #000000;
-    margin-bottom: 0em; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     section.tm-job-post {
       padding: 3em; } }
