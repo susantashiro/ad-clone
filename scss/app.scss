@@ -110,28 +110,38 @@ section.tm-mission {
     }
 }
 
-//Images below mission section
+//Image carousel below mission section
 section.tm-mission-images {
     background-color: $section-background;
-}
-//Orbit slider for mission images
-div.tm-mission-slider {
-    height: 21.5em;
-    div {
-        height: 18em;
-		padding: 0.6em 0em 2em 0em;
+    height: 20em;
+    div.tm-mission-carousel {
+        padding: 1em 0em;
     }
-    ul {
-        height: 18em	!important;
+    div.slick-slide {
+        height: 18em;
+        outline: none;
+    }
+    ul.slick-dots {
+        bottom: 0em;
+    }
+    button.slick-prev {
+        left: 15px;
+        z-index: 1;
+    }
+    button.slick-next {
+        right: 15px;
     }
     @include breakpoint(medium) {
         height: 24.5em;
-        div, ul {
-            height: 21em  !important;
+        div.slick-slide {
+            height: 21em;
+        }
+        div.tm-mission-carousel {
+            padding: 1em 0em 2em 0em;
         }
     }
 }
-// Images below mission section
+
 // ************** First slide *************
 .tm-img-mission-1A {
     background-image: url('https://img.thrivemarket.com/custom_assets/71a2f2d378542a1369528513a54af6ba.png');
@@ -165,7 +175,7 @@ div.tm-mission-slider {
     background-position: center 80%;
 }
 .tm-img-mission-3C {
-    background-image: url('https://img.thrivemarket.com/custom_assets/3961ef5c897a900fb17af91e99c7a67c.png');
+        background-image: url('https://img.thrivemarket.com/custom_assets/3961ef5c897a900fb17af91e99c7a67c.png');
     background-position: center 20%;
 }
 // ************** Fourth slide *************
@@ -213,16 +223,13 @@ section.tm-location {
     }
 }
 
-//Location images section
+//Location images carousel
 section.tm-location-images {
-    div, ul {
-        height: 16em	!important;
+    div {
+        height: 16em;
     }
-    button {
-        margin: 0em 0.3em;
-    }
-    nav {
-        margin-top: -2em;
+    div.slick-slide:focus {
+        outline: none;
     }
     h3 {
         color: $header-overlay;
@@ -234,23 +241,19 @@ section.tm-location-images {
             top: 50%
         }
     }
-    .orbit-previous:hover,
-    .orbit-next:hover,
-    .orbit-previous:active,
-    .orbit-next:active,
-    .orbit-previous:focus,
-    .orbit-next:focus {
-        background-color: transparent;
+    button.slick-prev {
+        left: 15px;
+        z-index: 1;
+    }
+    button.slick-next {
+        right: 15px;
     }
     @include breakpoint(medium) {
-        div, ul {
-            height: 24em     !important;
+        div {
+            height: 24em;
         }
         h3:last-child {
             top: 20%;
-        }
-        button {
-            margin: 0em 4.3em;
         }
     }
 }
@@ -271,40 +274,39 @@ section.tm-location-images {
     background-image: url('	https://img.thrivemarket.com/custom_assets/6af0842a528e1ba2ebe25dfada463fbe.png');
 }
 
-//Perks & Benefits Section - w/ Slider
-.tm-perks-slider {
+
+//Perks & Benfits Section
+section.tm-perks {
+    h3 {
+        margin: 2em auto 1em auto;
+    }
+}
+//Perks & Benefits w/ carousel - shown on small only
+div.tm-perks-carousel {
+    height: 13em;
+    padding-top: 1em;
+    padding-bottom: 15em;
     div {
         margin: auto;
     }
-    h3 {
-		margin: 2em auto;
+    div.slick-slide:focus {
+        outline: none;
     }
-    ul.orbit-container {
-		height: 205px	!important;
-	}
     li {
 		margin-bottom: 2em;
-        &:last-child {
-            margin-bottom: 0em;
-        }
 	}
 }
+//Perks & Benefits - No carousel
+div.tm-perks-nocarousel {
+    padding: 2em 1em 3.5em 1em;
 
-//Perks & Benefits - No Slider
-.tm-perks-noslider {
-    h3 {
-    	margin: 0.5em 0em 1.4em 0em;
-    }
     div.row.text-left {
     	margin-bottom: 2.5em;
     	height: 2em;
     }
     @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    	div.row.text-left {
+        div.row.text-left {
     		height: 3em;
-    	}
-    	.tm-text-block {
-    		padding-bottom: 3em;
     	}
     }
 }
@@ -343,56 +345,60 @@ section.tm-team-images {
 //Job postings section
 section.tm-job-postings {
     background-color: $section-background;
+    padding-bottom: 3em;
     #tm-job-container {
         background-color: #FFFFFF;
-        padding: 1.1em 2em;
+        padding: 1em;
     }
     div {
         width: 100%;
     }
     div.tm-job-link {
-        height: 1.8em;
+        height: auto;
     }
     div.tm-dept {
         margin-top: 1.5em;
     }
-    h4 {
-        color: $subheader-color;
-    }
     h3 {
         margin-bottom: 1.5em;
     }
+    h4 {
+        color: $subheader-color;
+        font-weight: bold;
+    }
+    h5 {
+        margin-bottom: 0em;
+    }
     p {
         color: $subheader-color;
+        float: left;
+        margin-bottom: 0em;
     }
     a:hover {
         border-bottom: 1px solid;
     }
-    @include breakpoint(small only) {
-        #tm-job-container {
-            padding: 1em;
-        }
+    @include breakpoint(medium) {
         div.tm-job-link {
-            height: auto;
+            height: 1.8em;
+        }
+        #tm-job-container {
+            padding: 1.1em 2em;
         }
         p {
-             float: left;
-             margin-bottom: 0em;
+            float: right;
+        }
+        h3 {
+            margin-top: 0.8em;
         }
         h4 {
-            font-weight: bold;
-        }
-
-        h5 {
-            margin-bottom: 0em;
+            font-weight: normal;;
         }
     }
 }
 
-
 //Job detail page
 section.tm-job-post{
-    padding: 5em;
+    padding: 1em 3em;
     h2 {
         color: #000000;
         margin-bottom: 0em;
@@ -406,16 +412,12 @@ section.tm-job-post{
     }
     a:first-of-type {
         margin-top: 2em;
+        float: left;
         &:hover {
             border-bottom: 1px solid;
         }
     }
-    @include breakpoint(medium down) {
-        a:first-of-type {
-            float: left;
-        }
-    }
-    @include breakpoint(small only) {
-        padding: 3em;
+    @include breakpoint(medium) {
+        padding: 2em 5em;
     }
 }
