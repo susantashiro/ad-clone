@@ -4162,20 +4162,27 @@ section.tm-mission .button {
     padding: 0.8em 4em; } }
 
 section.tm-mission-images {
-  background-color: #F5F1EE; }
-
-div.tm-mission-slider {
-  height: 21.5em; }
-  div.tm-mission-slider div {
+  background-color: #F5F1EE;
+  height: 20em; }
+  section.tm-mission-images div.tm-mission-carousel {
+    padding: 1em 0em; }
+  section.tm-mission-images div.slick-slide {
     height: 18em;
-    padding: 0.6em 0em 2em 0em; }
-  div.tm-mission-slider ul {
-    height: 18em	!important; }
+    outline: none; }
+  section.tm-mission-images ul.slick-dots {
+    bottom: 0em; }
+  section.tm-mission-images button.slick-prev {
+    left: 15px;
+    z-index: 1; }
+  section.tm-mission-images button.slick-next {
+    right: 15px; }
   @media screen and (min-width: 40em) {
-    div.tm-mission-slider {
+    section.tm-mission-images {
       height: 24.5em; }
-      div.tm-mission-slider div, div.tm-mission-slider ul {
-        height: 21em  !important; } }
+      section.tm-mission-images div.slick-slide {
+        height: 21em; }
+      section.tm-mission-images div.tm-mission-carousel {
+        padding: 1em 0em 2em 0em; } }
 
 .tm-img-mission-1A {
   background-image: url("https://img.thrivemarket.com/custom_assets/71a2f2d378542a1369528513a54af6ba.png"); }
@@ -4246,14 +4253,11 @@ section.tm-location p {
   section.tm-location p:last-child {
     margin-bottom: 2.1em; }
 
-section.tm-location-images div, section.tm-location-images ul {
-  height: 16em	!important; }
+section.tm-location-images div {
+  height: 16em; }
 
-section.tm-location-images button {
-  margin: 0em 0.3em; }
-
-section.tm-location-images nav {
-  margin-top: -2em; }
+section.tm-location-images div.slick-slide:focus {
+  outline: none; }
 
 section.tm-location-images h3 {
   color: #FFFFFF; }
@@ -4263,21 +4267,18 @@ section.tm-location-images h3 {
     position: relative;
     top: 50%; }
 
-section.tm-location-images .orbit-previous:hover,
-section.tm-location-images .orbit-next:hover,
-section.tm-location-images .orbit-previous:active,
-section.tm-location-images .orbit-next:active,
-section.tm-location-images .orbit-previous:focus,
-section.tm-location-images .orbit-next:focus {
-  background-color: transparent; }
+section.tm-location-images button.slick-prev {
+  left: 15px;
+  z-index: 1; }
+
+section.tm-location-images button.slick-next {
+  right: 15px; }
 
 @media screen and (min-width: 40em) {
-  section.tm-location-images div, section.tm-location-images ul {
-    height: 24em     !important; }
+  section.tm-location-images div {
+    height: 24em; }
   section.tm-location-images h3:last-child {
-    top: 20%; }
-  section.tm-location-images button {
-    margin: 0em 4.3em; } }
+    top: 20%; } }
 
 .tm-img-location-7A {
   background-image: url("https://img.thrivemarket.com/custom_assets/374b1969c2fd5c3488259f1d0281b070.png"); }
@@ -4295,32 +4296,28 @@ section.tm-location-images .orbit-next:focus {
 .tm-img-location-7E {
   background-image: url("	https://img.thrivemarket.com/custom_assets/6af0842a528e1ba2ebe25dfada463fbe.png"); }
 
-.tm-perks-slider div {
-  margin: auto; }
+section.tm-perks h3 {
+  margin: 2em auto 1em auto; }
 
-.tm-perks-slider h3 {
-  margin: 2em auto; }
+div.tm-perks-carousel {
+  height: 13em;
+  padding-top: 1em;
+  padding-bottom: 15em; }
+  div.tm-perks-carousel div {
+    margin: auto; }
+  div.tm-perks-carousel div.slick-slide:focus {
+    outline: none; }
+  div.tm-perks-carousel li {
+    margin-bottom: 2em; }
 
-.tm-perks-slider ul.orbit-container {
-  height: 205px	!important; }
-
-.tm-perks-slider li {
-  margin-bottom: 2em; }
-  .tm-perks-slider li:last-child {
-    margin-bottom: 0em; }
-
-.tm-perks-noslider h3 {
-  margin: 0.5em 0em 1.4em 0em; }
-
-.tm-perks-noslider div.row.text-left {
-  margin-bottom: 2.5em;
-  height: 2em; }
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .tm-perks-noslider div.row.text-left {
-    height: 3em; }
-  .tm-perks-noslider .tm-text-block {
-    padding-bottom: 3em; } }
+div.tm-perks-nocarousel {
+  padding: 2em 1em 3.5em 1em; }
+  div.tm-perks-nocarousel div.row.text-left {
+    margin-bottom: 2.5em;
+    height: 2em; }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    div.tm-perks-nocarousel div.row.text-left {
+      height: 3em; } }
 
 section.tm-team-images ul {
   height: 12em; }
@@ -4349,39 +4346,44 @@ section.tm-team-images ul {
   background-position: 100% 0%; }
 
 section.tm-job-postings {
-  background-color: #F5F1EE; }
+  background-color: #F5F1EE;
+  padding-bottom: 3em; }
   section.tm-job-postings #tm-job-container {
     background-color: #FFFFFF;
-    padding: 1.1em 2em; }
+    padding: 1em; }
   section.tm-job-postings div {
     width: 100%; }
   section.tm-job-postings div.tm-job-link {
-    height: 1.8em; }
+    height: auto; }
   section.tm-job-postings div.tm-dept {
     margin-top: 1.5em; }
-  section.tm-job-postings h4 {
-    color: #516A80; }
   section.tm-job-postings h3 {
     margin-bottom: 1.5em; }
+  section.tm-job-postings h4 {
+    color: #516A80;
+    font-weight: bold; }
+  section.tm-job-postings h5 {
+    margin-bottom: 0em; }
   section.tm-job-postings p {
-    color: #516A80; }
+    color: #516A80;
+    float: left;
+    margin-bottom: 0em; }
   section.tm-job-postings a:hover {
     border-bottom: 1px solid; }
-  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-    section.tm-job-postings #tm-job-container {
-      padding: 1em; }
+  @media screen and (min-width: 40em) {
     section.tm-job-postings div.tm-job-link {
-      height: auto; }
+      height: 1.8em; }
+    section.tm-job-postings #tm-job-container {
+      padding: 1.1em 2em; }
     section.tm-job-postings p {
-      float: left;
-      margin-bottom: 0em; }
+      float: right; }
+    section.tm-job-postings h3 {
+      margin-top: 0.8em; }
     section.tm-job-postings h4 {
-      font-weight: bold; }
-    section.tm-job-postings h5 {
-      margin-bottom: 0em; } }
+      font-weight: normal; } }
 
 section.tm-job-post {
-  padding: 5em; }
+  padding: 1em 3em; }
   section.tm-job-post h2 {
     color: #000000;
     margin-bottom: 0em; }
@@ -4391,12 +4393,10 @@ section.tm-job-post {
     list-style-type: disc;
     margin-left: 1.5em; }
   section.tm-job-post a:first-of-type {
-    margin-top: 2em; }
+    margin-top: 2em;
+    float: left; }
     section.tm-job-post a:first-of-type:hover {
       border-bottom: 1px solid; }
-  @media screen and (max-width: 63.9375em) {
-    section.tm-job-post a:first-of-type {
-      float: left; } }
-  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  @media screen and (min-width: 40em) {
     section.tm-job-post {
-      padding: 3em; } }
+      padding: 2em 5em; } }
