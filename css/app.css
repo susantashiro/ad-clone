@@ -1400,10 +1400,10 @@ kbd {
     margin-left: 0;
     margin-right: 0; }
   .button.primary {
-    background: #42CCA6;
+    background: #2199e8;
     color: #fff; }
     .button.primary:hover, .button.primary:focus {
-      background: #2eaa88;
+      background: #147cc0;
       color: #fff; }
   .button.secondary {
     background: #777;
@@ -1438,11 +1438,11 @@ kbd {
       border-color: #1d6a55;
       color: #1d6a55; }
     .button.hollow.primary {
-      border: 1px solid #42CCA6;
-      color: #42CCA6; }
+      border: 1px solid #2199e8;
+      color: #2199e8; }
       .button.hollow.primary:hover, .button.hollow.primary:focus {
-        border-color: #1d6a55;
-        color: #1d6a55; }
+        border-color: #0c4d78;
+        color: #0c4d78; }
     .button.hollow.secondary {
       border: 1px solid #777;
       color: #777; }
@@ -1900,10 +1900,10 @@ select {
   .button-group.expanded .button:nth-last-child(6):first-child ~ .button {
     width: 16.66667%; }
   .button-group.primary .button {
-    background: #42CCA6;
+    background: #2199e8;
     color: #fff; }
     .button-group.primary .button:hover, .button-group.primary .button:focus {
-      background: #2eaa88;
+      background: #147cc0;
       color: #fff; }
   .button-group.secondary .button {
     background: #777;
@@ -1951,7 +1951,7 @@ select {
   .callout > :last-child {
     margin-bottom: 0; }
   .callout.primary {
-    background-color: #e3f7f2; }
+    background-color: #def0fc; }
   .callout.secondary {
     background-color: #ebebeb; }
   .callout.success {
@@ -2598,7 +2598,7 @@ select {
     .media-object.stack-for-small .media-object-section {
       display: block;
       padding: 0;
-      padding-bottom: 1rem; }
+      padding-bottom: 0rem; }
       .media-object.stack-for-small .media-object-section img {
         width: 100%; } }
 
@@ -2606,9 +2606,9 @@ select {
   display: table-cell;
   vertical-align: top; }
   .media-object-section:first-child {
-    padding-right: 1rem; }
+    padding-right: 0rem; }
   .media-object-section:last-child:not( + .media-object-section:first-child) {
-    padding-left: 1rem; }
+    padding-left: 0rem; }
   .media-object-section.middle {
     vertical-align: middle; }
   .media-object-section.bottom {
@@ -2934,7 +2934,7 @@ body {
   margin-bottom: 1rem;
   border-radius: 0; }
   .progress.primary .progress-meter {
-    background-color: #42CCA6; }
+    background-color: #2199e8; }
   .progress.secondary .progress-meter {
     background-color: #777; }
   .progress.success .progress-meter {
@@ -3082,7 +3082,7 @@ body.is-reveal-open {
 .reveal {
   display: none;
   z-index: 1006;
-  padding: 1rem;
+  padding: 0rem;
   border: 1px solid #cacaca;
   margin: 100px auto 0 auto;
   background-color: #fefefe;
@@ -4104,6 +4104,14 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+section, div, ul, li, html, body {
+  box-sizing: border-box; }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -4125,6 +4133,12 @@ h3 {
 
 .tm-text-block {
   padding: 1.6em 1em; }
+
+.tm-last-column {
+  float: none     !important;
+  overflow: hidden;
+  width: auto;
+  margin-left: -1px; }
 
 section.tm-townhall-panel {
   position: relative;
@@ -4245,7 +4259,6 @@ section.tm-location h3 {
 
 section.tm-location h5 {
   color: #516A80;
-  font-weight: bold;
   margin: 0.8em 0em 1.2em 0em; }
 
 section.tm-location p {
@@ -4319,12 +4332,15 @@ div.tm-perks-nocarousel {
     div.tm-perks-nocarousel div.row.text-left {
       height: 3em; } }
 
-section.tm-team-images ul {
-  height: 12em; }
-
-@media only screen and (min-width: 40.063em) and (max-width: 50em) {
-  section.tm-team-images ul {
-    height: 10em; } }
+section.tm-team-images {
+  width: 100%; }
+  section.tm-team-images div {
+    height: 12em; }
+  section.tm-team-images div.row {
+    width: 100%; }
+  @media only screen and (min-width: 40.063em) and (max-width: 50em) {
+    section.tm-team-images div {
+      height: 10em; } }
 
 .tm-img-team-9A {
   background-image: url("	https://img.thrivemarket.com/custom_assets/54bfdea466240de691dfa375a0580bc3.png");

@@ -102,7 +102,7 @@ function appendJobTitles(data) {
                 '<div class="large-6 medium-6 small-12 columns">',
                     '<h5><a href="job_posting.html?id=' + item.id + '">' + item.text + '</a></h5>',
                 '</div>',
-                '<div class="large-6 medium-6 small-12 columns text-right">',
+                '<div class="large-6 medium-6 tm-last-column small-12 columns text-right">',
                     '<p>' + item.categories.location + ', ' + item.categories.commitment + '</p>',
                 '</div>',
             '</div>'
