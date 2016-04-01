@@ -4104,12 +4104,7 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0; }
-
-section, div, ul, li, html, body {
+section, div {
   box-sizing: border-box; }
 
 ul {
@@ -4134,11 +4129,9 @@ h3 {
 .tm-text-block {
   padding: 1.6em 1em; }
 
-.tm-last-column {
-  float: none     !important;
-  overflow: hidden;
-  width: auto;
-  margin-left: -1px; }
+.row::before,
+.row::after {
+  display: block; }
 
 section.tm-townhall-panel {
   position: relative;
@@ -4310,7 +4303,7 @@ section.tm-location-images button.slick-next {
   background-image: url("	https://img.thrivemarket.com/custom_assets/6af0842a528e1ba2ebe25dfada463fbe.png"); }
 
 section.tm-perks h3 {
-  margin: 2em auto 1em auto; }
+  margin: 2em auto 0.5em auto; }
 
 div.tm-perks-carousel {
   height: 13em;
