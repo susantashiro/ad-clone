@@ -2,9 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+@import 'foundation';
 @import 'palette/_colorpallete';
 @import 'settings';
-@import 'foundation';
 @import 'motion-ui';
 
 @include foundation-global-styles;
@@ -47,9 +48,14 @@
 @include motion-ui-animations;
 
 // Global styles
+
+section, div {
+    box-sizing: border-box;
+}
 ul {
     list-style-type: none;
-	padding:0; margin:0;
+	padding:0;
+    margin:0;
 }
 section, div, li {
     background-size: cover;
@@ -67,6 +73,10 @@ h3 {
 }
 .tm-text-block {
 	padding: 1.6em 1em;
+}
+.row::before,
+.row::after {
+    display: block;
 }
 
 // Townhall panel w/ background image
@@ -212,7 +222,6 @@ section.tm-location {
     }
     h5 {
         color: $subheader-color;
-        font-weight: bold;
         margin: 0.8em 0em 1.2em 0em;
     }
     p {
@@ -278,7 +287,7 @@ section.tm-location-images {
 //Perks & Benfits Section
 section.tm-perks {
     h3 {
-        margin: 2em auto 1em auto;
+        margin: 2em auto 0.5em auto;
     }
 }
 //Perks & Benefits w/ carousel - shown on small only
@@ -313,11 +322,15 @@ div.tm-perks-nocarousel {
 
 //Team images section
 section.tm-team-images {
-    ul {
+    width: 100%;
+    div {
     	height: 12em;
     }
+    div.row {
+        width: 100%;
+    }
     @media only screen and (min-width: 40.063em) and (max-width: 50em) {
-        ul {
+        div {
             height: 10em;
         }
     }
