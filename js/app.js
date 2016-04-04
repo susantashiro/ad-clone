@@ -87,6 +87,7 @@ function appendDeptSections(names) {
     names.forEach(function (deptName) {
         var htmlBlock = $('<div class="tm-dept"><h4>' + deptName + '</h4></div>');
         $(htmlBlock).addClass('tm-' + formatClassName(deptName));
+        $(htmlBlock).addClass('clearfix');
         $(htmlBlock).appendTo('#tm-job-container');
     });
 }

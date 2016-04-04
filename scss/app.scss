@@ -24,7 +24,7 @@
 @include foundation-drilldown-menu;
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
-@include foundation-flex-grid;
+// @include foundation-flex-grid;
 @include foundation-flex-video;
 @include foundation-label;
 @include foundation-media-object;
@@ -73,10 +73,6 @@ h3 {
 }
 .tm-text-block {
 	padding: 1.6em 1em;
-}
-.row::before,
-.row::after {
-    display: block;
 }
 
 // Townhall panel w/ background image
@@ -287,7 +283,7 @@ section.tm-location-images {
 //Perks & Benfits Section
 section.tm-perks {
     h3 {
-        margin: 2em auto 0.5em auto;
+        margin: 2em auto 1em auto;
     }
 }
 //Perks & Benefits w/ carousel - shown on small only
@@ -362,9 +358,6 @@ section.tm-job-postings {
     #tm-job-container {
         background-color: #FFFFFF;
         padding: 1em;
-    }
-    div {
-        width: 100%;
     }
     div.tm-job-link {
         height: auto;
