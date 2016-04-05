@@ -74,6 +74,13 @@ h3 {
 .tm-text-block {
 	padding: 1.6em 1em;
 }
+.slick-prev:before, .slick-next:before {
+    font-size: 27px    !important;
+}
+.slick-prev, .slick-next {
+    width: 60px    !important;
+    height: 60px    !important;
+}
 
 // Townhall panel w/ background image
 section.tm-townhall-panel {
@@ -131,11 +138,11 @@ section.tm-mission-images {
         bottom: 0em;
     }
     button.slick-prev {
-        left: 15px;
+        left: 10px;
         z-index: 1;
     }
     button.slick-next {
-        right: 15px;
+        right: 10px;
     }
     @include breakpoint(medium) {
         height: 24.5em;
@@ -247,11 +254,11 @@ section.tm-location-images {
         }
     }
     button.slick-prev {
-        left: 15px;
+        left: 10px;
         z-index: 1;
     }
     button.slick-next {
-        right: 15px;
+        right: 10px;
     }
     @include breakpoint(medium) {
         div {

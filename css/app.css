@@ -3732,6 +3732,13 @@ h3 {
 .tm-text-block {
   padding: 1.6em 1em; }
 
+.slick-prev:before, .slick-next:before {
+  font-size: 27px    !important; }
+
+.slick-prev, .slick-next {
+  width: 60px    !important;
+  height: 60px    !important; }
+
 section.tm-townhall-panel {
   position: relative;
   height: 19em; }
@@ -3778,10 +3785,10 @@ section.tm-mission-images {
   section.tm-mission-images ul.slick-dots {
     bottom: 0em; }
   section.tm-mission-images button.slick-prev {
-    left: 15px;
+    left: 10px;
     z-index: 1; }
   section.tm-mission-images button.slick-next {
-    right: 15px; }
+    right: 10px; }
   @media screen and (min-width: 40em) {
     section.tm-mission-images {
       height: 24.5em; }
@@ -3873,11 +3880,11 @@ section.tm-location-images h3 {
     top: 50%; }
 
 section.tm-location-images button.slick-prev {
-  left: 15px;
+  left: 10px;
   z-index: 1; }
 
 section.tm-location-images button.slick-next {
-  right: 15px; }
+  right: 10px; }
 
 @media screen and (min-width: 40em) {
   section.tm-location-images div {
