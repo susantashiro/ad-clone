@@ -50,7 +50,8 @@ $('.tm-perks-carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 200,
-    dots: true
+    dots: true,
+    arrows: false
 });
 
 /** Get Request to Lever API for all job openings */
