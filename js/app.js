@@ -101,10 +101,10 @@ function appendJobTitles(data) {
     data.forEach(function (item) {
         var htmlBlock = [
             '<div class="row tm-job-link">',
-                '<div class="large-6 medium-6 small-12 columns">',
+                '<div class="large-8 medium-7 small-12 columns">',
                     '<h5><a href="job_posting.html?id=' + item.id + '">' + item.text + '</a></h5>',
                 '</div>',
-                '<div class="large-6 medium-6 small-12 columns text-right">',
+                '<div class="large-4 medium-5 small-12 columns text-right">',
                     '<p>' + item.categories.location + ', ' + item.categories.commitment + '</p>',
                 '</div>',
             '</div>'
