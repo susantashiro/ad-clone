@@ -1,5 +1,12 @@
 $(document).foundation();
 
+/** Join Thrive Market button scrolls down to job posting section */
+$('.tm-join-thrive-btn').click(function () {
+    $('html,body').animate({
+        scrollTop: $(".tm-job-postings").offset().top},
+        800);
+});
+
 /** Slick carousel settings for images below mission section */
 $('.tm-mission-carousel').slick({
     dots: false,
