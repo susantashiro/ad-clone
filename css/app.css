@@ -3930,21 +3930,37 @@ div.tm-perks-nocarousel {
     div.tm-perks-nocarousel div.row.text-left {
       height: 3em; } }
 
-section.tm-videos {
-  background-color: #F5F1EE;
-  padding-top: 2em;
-  margin: 0 auto;
-  text-align: center; }
-  section.tm-videos .tm-video-wrapper {
-    margin: 0 auto;
-    max-width: 640px; }
-  @media screen and (min-width: 40em) {
-    section.tm-videos {
-      padding-top: 4em; } }
+section.tm-team-images {
+  width: 100%; }
+  section.tm-team-images div {
+    height: 12em; }
+  section.tm-team-images div.row {
+    width: 100%; }
+  @media only screen and (min-width: 40.063em) and (max-width: 50em) {
+    section.tm-team-images div {
+      height: 10em; } }
+
+.tm-img-team-9A {
+  background-image: url("https://img.thrivemarket.com/custom_assets/54bfdea466240de691dfa375a0580bc3.png");
+  background-position: center 20%; }
+
+.tm-img-team-9B {
+  background-image: url("https://img.thrivemarket.com/custom_assets/3f296841ccaa0711fc6b56e7ba607ed8.png");
+  background-position: 0% 20%; }
+
+.tm-img-team-9C {
+  background-image: url("https://img.thrivemarket.com/custom_assets/1e125962c609cd115624a426b7e746b2.png"); }
+
+.tm-img-team-9D {
+  background-image: url("https://img.thrivemarket.com/custom_assets/08f5020d4f1e4f6f90d4deca986565c0.png");
+  background-position: 0% center; }
+
+.tm-img-team-9E {
+  background-image: url("https://img.thrivemarket.com/custom_assets/868b31c1bb03f1f97a3e6f47d0038ee1.png");
+  background-position: 100% 0%; }
 
 section.tm-job-postings {
   background-color: #F5F1EE;
-  padding-top: 1em;
   padding-bottom: 3em; }
   section.tm-job-postings #tm-job-container {
     background-color: #FFFFFF;
